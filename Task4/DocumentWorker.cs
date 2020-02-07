@@ -1,24 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Task4
 {
     class DocumentWorker
     {
-        public void OpenDocument()
+        public virtual void OpenDocument()
         {
-            Console.WriteLine("Документ открыт");
+            Console.WriteLine("Документ открыт;");
         }
 
-        public void EditDocument ()
+        public virtual void EditDocument ()
         {
-            Console.WriteLine("Редактирование документа доступно в версии Про");
+            Console.WriteLine("Редактирование документа доступно в версии PRO;");
         }
 
-        public void SaveDocument()
+        public virtual void SaveDocument()
         {
-            Console.WriteLine("Сохранение документа доступно в версии Про");
+            Console.WriteLine("Сохранение документа доступно в версии PRO.");
         }
     }
 }
